@@ -1,0 +1,464 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #E5E5E5;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+
+.loginPage{
+  display: flex;
+}
+.hidden{
+  display: none;
+}
+//large screens
+@media (min-width:1080px) {
+  
+  .loginPage .loginPageLeft{
+    width: 50%;
+  }
+  .loginPage .loginPageRight {
+    margin-top: 50px;
+    margin-left: 200PX;
+    h1{
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 80px;
+      color: #00AA95;
+      padding-left: 30px;
+    }
+    label{
+      color: #26AAA3;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 45px;
+    }
+    input{
+      border: none;
+      border-bottom: 1px solid #26AAA3;
+      line-height: 25px;
+      width: 230px;
+      padding:5px 10px;
+      padding-right: 30px;
+    }
+    input:focus{
+      outline: none;
+    }
+    #submitBitton{
+      border: none;
+      margin-top: 50px;
+      margin-left: 20px;
+      background: rgba(38, 170, 163, 0.89);
+      border-radius: 5px;
+      width: 170px;
+      height: 45px;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      color: #FFFFFF;
+      padding-left: 30px;
+    }
+    .inputFieldIcons{
+       color: #26AAA3;
+       margin-left: -20px;
+    }
+  }
+  .sideNav{
+    position: fixed;
+    width: 84px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #121A26;
+  }
+  .pageComponent{
+    height:auto;
+    background: #E5E5E5;
+  }
+  #navLogo{
+    border-bottom: 1px solid white;
+  }
+  #navLogoImg{
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .navIcons{
+    display: block !important;
+    line-height:50px;
+    user-select: none !important;
+    cursor: pointer;
+    svg{
+      color: #EDEDED;
+      font-size: 24px;
+      margin-left: -15px;
+    }
+    p{
+      font-family: Quattrocento;
+      font-size: 15px;
+      margin-left: -30px;
+      color: #FFFFFF;
+    }
+   #navBarFaq{
+     position: fixed;
+     bottom: 0;
+     margin-left: -40px;
+     color: #FFFFFF;
+     border-top: 1px solid #FFFFFF;
+     width: 83px;
+     p{
+       padding-left: 50px;
+     }
+   }
+  }
+  .navIcons::foucs{
+    color:green;
+  }
+  .navIcon-active{
+    svg{
+      color: #42E099;
+    }
+  }
+  .TopNav{
+    display: flex;
+    padding-left: 80px;
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 50px;
+    .topNavHeadingText{
+      padding-left: 30px;
+      margin-top: 5px;
+      min-width: 200px;
+      padding-right:150px;
+    }
+    .serachBarDropDownSelector{
+      padding-top: 5px;
+      padding-left: 30px;
+      padding-right: 10px;
+      margin-top: 5px;
+      border: none;
+      outline: none;
+    }
+    .search-bar{
+      input{
+        border:none;
+        width: 350px;
+        height:40px;
+        margin-top: 8px;
+        font-family: Roboto;
+        border-bottom: 2px solid #C2C2C2;
+      }
+      input:focus{
+        outline: none;
+        border-bottom: 2px solid #00AA95;
+      }
+      #searchBarIconTopNavBar{
+        svg{
+            font-size:20px;
+            color: #00AA95;
+        }
+        margin-left: -45px;
+      }
+    }
+    .profileCartIconContainer{
+        display: flex;
+        margin-left:200px;
+        svg{
+          color: #6B6B6B;
+          font-size:25px;
+          margin-right: 40px;
+          margin-top: 15px;
+        }
+        svg:hover{
+          color: #00AA95
+        }
+    }
+  }
+}
+
+//Ipad Pro
+@media (min-width:768px) and (max-width:1080px){
+  
+  .loginPage .loginPageLeft{
+    width: 50%;
+  }
+  .loginPage .loginPageRight {
+    margin-top: 50px;
+    margin-left: 200PX;
+    h1{
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 80px;
+      color: #00AA95;
+      padding-left: 30px;
+    }
+    label{
+      color: #26AAA3;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 45px;
+    }
+    input{
+      border: none;
+      border-bottom: 1px solid #26AAA3;
+      line-height: 25px;
+      width: 230px;
+      padding:5px 10px;
+      padding-right: 30px;
+    }
+    input:focus{
+      outline: none;
+    }
+    #submitBitton{
+      border: none;
+      margin-top: 50px;
+      margin-left: 20px;
+      background: rgba(38, 170, 163, 0.89);
+      border-radius: 5px;
+      width: 170px;
+      height: 45px;
+      font-family: Reem Kufi;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      color: #FFFFFF;
+      padding-left: 30px;
+    }
+    .inputFieldIcons{
+       color: #26AAA3;
+       margin-left: -20px;
+    }
+  }
+  .sideNav{
+    position: fixed;
+    width: 84px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #121A26;
+  }
+  .pageComponent{
+    height:auto;
+    background: #E5E5E5;
+  }
+  #navLogo{
+    border-bottom: 1px solid white;
+  }
+  #navLogoImg{
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .navIcons{
+    display: block !important;
+    line-height:50px;
+    user-select: none !important;
+    cursor: pointer;
+    svg{
+      color: #EDEDED;
+      font-size: 24px;
+      margin-left: -15px;
+    }
+    p{
+      font-family: Quattrocento;
+      font-size: 15px;
+      margin-left: -30px;
+      color: #FFFFFF;
+    }
+   #navBarFaq{
+     position: fixed;
+     bottom: 0;
+     margin-left: -40px;
+     color: #FFFFFF;
+     border-top: 1px solid #FFFFFF;
+     width: 83px;
+     p{
+       padding-left: 50px;
+     }
+   }
+  }
+  .navIcons::foucs{
+    color:green;
+  }
+  .navIcon-active{
+    svg{
+      color: #42E099;
+    }
+  }
+  .TopNav{
+    display: flex;
+    padding-left: 80px;
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 50px;
+    .topNavHeadingText{
+      padding-left: 30px;
+      margin-top: 5px;
+      min-width: 500px;
+    }
+    .serachBarDropDownSelector{
+      padding-top: 5px;
+      padding-left: 30px;
+      padding-right: 10px;
+      margin-top: 5px;
+      border: none;
+      outline: none;
+    }
+    .search-bar{
+      input{
+        border:none;
+        width: 350px;
+        height:40px;
+        margin-top: 8px;
+        font-family: Roboto;
+        border-bottom: 2px solid #C2C2C2;
+      }
+      input:focus{
+        outline: none;
+        border-bottom: 2px solid #00AA95;
+      }
+      #searchBarIconTopNavBar{
+        svg{
+            font-size:20px;
+            color: #00AA95;
+        }
+        margin-left: -45px;
+      }
+    }
+    .profileCartIconContainer{
+        display: flex;
+        margin-left:80px;
+        position: absolute;
+        right: 0px;
+        svg{
+          color: #6B6B6B;
+          font-size:25px;
+          margin-right: 40px;
+          margin-top: 15px;
+        }
+        svg:hover{
+          color: #00AA95
+        }
+    }
+  }
+}
+//sp view
+@media  (max-width: 768px){
+  .NavbarSpView .inActice .topNavContainer{
+    display: flex;
+    background-color: #121A26;
+    min-height: 70px;
+    #hamBurgerMenuIcon{
+      margin: 15px 10px;
+      svg{
+        font-size: 30px;
+        color: #42E099;
+      }
+    }
+    .searchInputExpanded{
+      border: none;
+      background-color: #121A26;
+      border-bottom: 1px solid #FFFFFF;
+      height: 60px;
+      outline: none;
+      width: 200px;
+      color: #FFFFFF;
+    }
+    h3{
+      font-family: Quattrocento;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 15px;
+      margin-left: 20px; 
+      color: #EAEAEA;
+    }
+    #searchBarIconSPView{
+      position: absolute;
+      right: 15px;
+      top:15px;
+      svg{
+        font-size: 30px;
+        color: #42E099;
+      }
+    }
+  }
+  .NavbarSpView .spMenuExpaned{
+    transform: translateY(0%) scale(1);
+    transition: all 300ms ease-in-out;
+    display: block;
+    border-top: 1px solid #FFFFFF;
+    background-color: #121A26;
+    color: #FFFFFF;
+    line-height:55px;
+    font-size:18px;
+    font-weight:bold;
+    
+    .menuLinksSpview{
+      border-bottom: 1px solid #FFFFFF;
+      position: relative;
+      left: 0;
+      margin-left:-40px;
+      padding-left: 20px;
+    }
+    .menuLinksSpview:focus{
+      background-color: #174fa1;
+    }
+    #faqLinkSpView{
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+    
+  }
+  .NavbarSpView .spMenuExpanedEntry{
+    opacity: 0.5;
+    display: block;
+    border-top: 1px solid #FFFFFF;
+    background-color: #121A26;
+    color: #FFFFFF;
+    line-height:55px;
+    font-size:18px;
+    font-weight:bold;
+    
+    .menuLinksSpview{
+      border-bottom: 1px solid #FFFFFF;
+      position: relative;
+      left: 0;
+      margin-left:-40px;
+      padding-left: 20px;
+    }
+    .menuLinksSpview:focus{
+      background-color: #174fa1;
+    }
+    #faqLinkSpView{
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+    
+  }
+}
