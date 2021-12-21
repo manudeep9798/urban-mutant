@@ -3,5 +3,10 @@ module.exports = {
   images: {
     loader: 'imgix',
     path: '/',
-  }
+  },
+  webpack: (config, options) => {
+        config.optimization.minimize = false;
+      return config
+    }
+  
 }
