@@ -160,16 +160,16 @@ const index = () => {
             <div className="custPage">
                 <div className=" headersec flex">
                     <div className="toggleSwitch flex">
-                        <label class="switch">
+                        <label className="switch">
                         <input type="checkbox"/>
-                        <span class="slider round"></span>
+                        <span className="slider round"></span>
                         </label>
                         <p>Active Only</p>
                     </div>
                     <div className="toggleSwitch flex">
-                        <label class="switch">
+                        <label className="switch">
                         <input type="checkbox"/>
-                        <span class="slider round"></span>
+                        <span className="slider round"></span>
                         </label>
                         <p>In-Active Only</p>
                     </div>
