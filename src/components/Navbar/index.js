@@ -34,7 +34,6 @@ const NavBar = () => {
           return windowSize;
         
     }
-    console.log(size.width);
     return (
         <div className='sideNav'>
             
