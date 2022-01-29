@@ -46,7 +46,7 @@ const index = () => {
                         <div className="recomendedProductsOverFlow">
                         {RecomendedProducts.map(product=>{
                             return(
-                                <div className="recomendedCard flex">
+                                <div key={product.price} className="recomendedCard flex">
                                     <img src='https://thumbs.dreamstime.com/z/gym-24699087.jpg'/>
                                     <div>
                                     <p>yearly</p>
