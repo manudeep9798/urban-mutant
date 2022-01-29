@@ -11,7 +11,7 @@ import NavBarSp from '../Navbar/NavBarSp'
 const NavBar = () => {
     const router = useRouter();
     const size = useWindowSize()
-    
+    const [expandCustNavIcon,setExpandCustNavIcon] =useState(false)
     function useWindowSize() {
         const [windowSize, setWindowSize] = useState({
           width: undefined,
@@ -52,16 +52,16 @@ const NavBar = () => {
              <Link href='/dashboard'><a><NavIcons item="RiDashboardFill"/></a></Link>
              }
              {router.pathname==='/leads'?
-             <NavIcons className="navIcon-active" item="FaUserPlus"/>:
-             <Link href='/leads'><a><NavIcons item="FaUserPlus"/></a></Link>
+             <NavIcons className="navIcon-active" item="IoIosPeople"/>:
+             <Link href='/leads'><a><NavIcons item="IoIosPeople"/></a></Link>
              }
              {router.pathname==='/staff'?
              <NavIcons className="navIcon-active" item="RiFileUserLine"/>:
              <Link href='/staff'><a><NavIcons item="RiFileUserLine"/></a></Link>
              }
              {router.pathname==='/customer'?
-             <NavIcons className="navIcon-active" item="IoIosPeople"/>:
-             <Link href='/customer'><a><NavIcons item="IoIosPeople"/></a></Link>
+             <NavIcons  className="navIcon-active" item="FaUserPlus"/>:
+             <Link href='/customer'><a><NavIcons item="FaUserPlus"/></a></Link>
              }
              {router.pathname==='/plans'?
              <NavIcons className="navIcon-active" item="RiCalendarCheckLine"/>

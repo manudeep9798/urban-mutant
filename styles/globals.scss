@@ -2,11 +2,20 @@ html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
   background-color: #E5E5E5;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.divider{
+  border-top: 2px solid #F1FAED;
+  width: 100%;
+}
+.flex{
+  display: flex;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -85,14 +94,16 @@ ul{
   .sideNav{
     position: fixed;
     width: 84px;
-    height: 100vh;
+    height: 100%;
     left: 0px;
     top: 0px;
     background: #121A26;
   }
   .pageComponent{
-    height:auto;
+    height:100vh;
+    margin-left: 84px;
     background: #E5E5E5;
+    margin-bottom: 150px;
   }
   #navLogo{
     border-bottom: 1px solid white;
@@ -194,6 +205,79 @@ ul{
         }
     }
   }
+  .mainChart{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    margin: 30px;
+    border-radius:5px;
+    svg{
+      margin-left: 30% !important;
+      height:400px !important;
+      width:400px !important;
+    }
+    h1{
+      font-size:19px;
+      padding:5px 10px;
+    }
+  }
+  .bannerCards{
+    padding:5px 20px;
+    display:flex;
+    margin-left: 10px;
+  }
+  .verticalCard{
+    width:100%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    padding:0px !important;
+    height:150px !important;
+    .leftsec{
+      width:10px;
+      background-color:#121A26;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .rightSec{
+      background-color:#FFFFFF;
+      width:100%;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .name{
+      
+      text-align: center;
+      font-size:18px;
+      color:#3E3E3E;
+      font-family: Quattrocento;
+      font-style: normal;
+      font-weight: bold;
+    }
+    .value{
+      color:#E65300;
+      font-family: Quattrocento;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      text-align: center;
+    }
+    margin-right: 50px;;
+  }
+  .stackedCardContainer{
+    padding:10px 30px;
+    .stackedCards{
+      padding: 5px 10px;
+      background-color: #FFFFFF;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom:20px;
+      border-radius: 5px;
+      canvas{
+        width: 100%;
+        height: 500px !important;;
+      }
+    }
+  }
 }
 
 //Ipad Pro
@@ -262,8 +346,10 @@ ul{
     background: #121A26;
   }
   .pageComponent{
+    margin-left: 84px;
     height:auto;
     background: #E5E5E5;
+    margin-bottom: 150px;
   }
   #navLogo{
     border-bottom: 1px solid white;
@@ -326,15 +412,17 @@ ul{
       padding-left: 30px;
       padding-right: 10px;
       margin-top: 5px;
+      margin-left: -180px;
       border: none;
       outline: none;
     }
     .search-bar{
       input{
         border:none;
-        width: 350px;
+        width: 200px;
         height:40px;
         margin-top: 8px;
+        margin-left: -80px;
         font-family: Roboto;
         border-bottom: 2px solid #C2C2C2;
       }
