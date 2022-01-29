@@ -183,7 +183,7 @@ const index = () => {
                     {
                         data.map(cust=>{
                             return(
-                                <div className=" customerDataCard">
+                                <div key={cust.id} className="customer customerDataCard">
                                     <p><b>Name</b>: {cust.name}</p>
                                     <p><b>DOB</b>: {cust.dob}</p>
                                     <p><b>Email</b>: {cust.email}</p>
