@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from '../../src/components/Header/Header'
 import {AiFillFileAdd} from 'react-icons/ai'
+
 const data= [
     {
       "id": 0,
@@ -154,26 +155,17 @@ const data= [
     }
   ]
 const index = () => {
+  const [toggle, setToggle] = useState(false);
     return (
         <div>
             <Header/>
             <div className="custPage">
                 <div className=" headersec flex">
-                    <div className="toggleSwitch flex">
-                        <label className="switch">
-                        <input type="checkbox"/>
-                        <span className="slider round"></span>
-                        </label>
-                        <p>Active Only</p>
-                    </div>
-                    <div className="toggleSwitch flex">
-                        <label className="switch">
-                        <input type="checkbox"/>
-                        <span className="slider round"></span>
-                        </label>
-                        <p>In-Active Only</p>
-                    </div>
-                    
+                    <label>Active Only</label>
+                    <input type="checkBox"/>
+                    <label>In-Active Only</label>
+                    <input type="checkBox"/>
+
                 </div>
                 <div className="createCustBtn">
                     <h5>Add New Customer</h5>

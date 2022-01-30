@@ -5,61 +5,10 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #E5E5E5;
+  background-color: rgb(243 244 246);
   font-family: Reem Kufi,
 }
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 15px;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: -3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(14px);
-  -ms-transform: translateX(14px);
-  transform: translateX(14px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 14px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 
 .divider{
   border-top: 1px solid #ccd6d9;
@@ -361,14 +310,15 @@ ul{
       background-color:white;
       min-height: 70px;
       margin-top:10px;
-      .toggleSwitch{
-        margin-top:25px;
-        margin-left:30px;
-        margin-right:10px;
-        p{
-          margin-left: 20px;
-          margin-top:0px;
-        }
+      label{
+        margin-top:20px;
+        margin-left: 10px;
+      }
+      input{
+        margin-top:20px;
+        margin-left: 10px;
+        height:20px;
+        width:20px;
       }
      
     }
