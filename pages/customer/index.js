@@ -155,7 +155,6 @@ const data= [
     }
   ]
 const index = () => {
-  const [toggle, setToggle] = useState(false);
     return (
         <div>
             <Header/>
