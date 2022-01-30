@@ -35,29 +35,15 @@ const index = () => {
             <>
             <div className="pageComponent">
                 <div className="flex">
-                    <div className="mainChart">
-                    <h1>AIL Ratios</h1>
+                    <div className="IncomeChart">
+                    <h1>Income</h1>
                     <div className="divider"></div>
-                    <PieChart data={myData}/>
+                    
                     </div>
-                    <div className="recomendedProducts">
-                        <h1>Recomended Products</h1>
+                    <div className=" mainChart">
+                        <h1>AIL Ratio</h1>
                         <div className="divider"></div>
-                        <div className="recomendedProductsOverFlow">
-                        {RecomendedProducts.map(product=>{
-                            return(
-                                <div key={product.price} className="recomendedCard flex">
-                                    <img src='https://thumbs.dreamstime.com/z/gym-24699087.jpg'/>
-                                    <div>
-                                    <p>yearly</p>
-                                    <p>12000</p>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                        </div>
-
-                        
+                        <PieChart data={myData}/>                    
                     </div>
                 </div>
                 

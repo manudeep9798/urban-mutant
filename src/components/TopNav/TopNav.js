@@ -14,14 +14,6 @@ const TopNav = () => {
         <div className="TopNav">
             <h2 className="topNavHeadingText">{constants.navBarHeadings[headingText]}</h2>
           
-             <div className="serachBarDropDownSelector">
-                <select className="serachBarDropDownSelector" name="All" id="All">
-                <option value="all">All</option>
-                <option value="name">Name</option>
-                <option value="phone">Phone</option>
-                <option value="email">Email</option>
-                </select>
-            </div>
             <span className="search-bar"><SearchBar/></span>
 
 
