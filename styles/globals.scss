@@ -216,9 +216,9 @@ ul{
     height: 400px;
     padding:5px 10px;
     svg{
-      height:500px !important;
-      width:500px !important;
-      margin-top: -12%;
+      height:400px !important;
+      width:400px !important;
+      margin-top: -60px;
       margin-left: 15%;
       color: #42E099;
     }
@@ -234,8 +234,9 @@ ul{
     .doughnutChart{
       canvas{
         margin-left:25%;
-        height:300px !important;
-        width: 300px !important;
+        margin-top: 10px;
+        height:250px !important;
+        width: 250px !important;
 
       }
     }
