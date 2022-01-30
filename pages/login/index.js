@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import {FaUserAlt} from 'react-icons/fa'
 import {FaEyeSlash} from 'react-icons/fa'
 import {FaEye} from 'react-icons/fa';
+import { useRouter } from 'next/router'
 
 const Index = () => {
+    const router = useRouter()
     const [hidePassword,setHidePassword] =useState("password");
     const [userName,setUserName] = useState("");
     const [password,setPassword] = useState("");
@@ -19,7 +21,7 @@ const Index = () => {
         console.log('userName',userName);
         console.log('password',password);
         if(true){
-            Router.push('/dashboard')
+            router.push('/dashboard')
         }
         
     }

@@ -52,6 +52,7 @@ ul{
       line-height: 80px;
       color: #00AA95;
       padding-left: 30px;
+      margin-top:150px;
     }
     label{
       color: #26AAA3;
@@ -355,9 +356,14 @@ ul{
 }
 
 //Ipad Pro
+.loginPage{
+  height:100vh !important;
+  background-image:url(../src/assets/images/loginPageBackground.jpeg);
+  background-size:cover;
+}
 @media (min-width:768px) and (max-width:1080px){
-  
   .loginPage .loginPageLeft{
+    margin-top: 0px;
     width: 50%;
   }
   .loginPage .loginPageRight {
@@ -371,6 +377,7 @@ ul{
       line-height: 80px;
       color: #00AA95;
       padding-left: 30px;
+      margin-top:100px;
     }
     label{
       color: #26AAA3;
