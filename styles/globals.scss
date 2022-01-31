@@ -347,6 +347,18 @@ ul{
       word-wrap: break-word;
       border-radius:5px;
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      .customerActive{
+        float:right;
+        color: #14bb70;
+        font-size:18px;
+
+      }
+      .customerInActive{
+        float:right;
+        color: #e80000;
+        font-size:18px;
+
+      }
     }
     .customerDataCard:hover{
       transition: 400ms;

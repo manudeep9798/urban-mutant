@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../../src/components/Header/Header'
 import {AiFillFileAdd} from 'react-icons/ai'
+import {AiFillCheckCircle} from 'react-icons/ai'
+import {AiFillInfoCircle} from 'react-icons/ai'
 import Link from 'next/link'
 const data= [
     {
@@ -61,7 +63,7 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": true
     },
     {
       "id": 1,
@@ -71,7 +73,7 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": true
     },
     {
       "id": 1,
@@ -81,7 +83,7 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": true
     },,
     {
       "id": 1,
@@ -91,7 +93,7 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": true
     },
     {
       "id": 1,
@@ -175,6 +177,8 @@ const index = () => {
                         data.map(cust=>{
                             return(
                                 <div key={cust.id} className="customer customerDataCard">
+                                    {cust.optedin?<span className="customerActive"><AiFillCheckCircle/></span>:
+                                    <span  className="customerInActive"><AiFillInfoCircle/></span>}
                                     <p><b>Name</b>: {cust.name}</p>
                                     <p><b>DOB</b>: {cust.dob}</p>
                                     <p><b>Email</b>: {cust.email}</p>
