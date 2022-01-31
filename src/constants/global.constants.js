@@ -6,6 +6,7 @@ module.exports ={
         customer: 'Customers',
         plans: 'Plans',
         more: 'More',
-        faq:"FAQ"
+        faq:"FAQ",
+        'customer/create': "Create"
     }
 };
