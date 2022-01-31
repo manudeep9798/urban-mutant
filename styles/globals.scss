@@ -460,6 +460,17 @@ ul{
       }
     }
   }
+  #submitBtn{
+    background-color:#14bb70;
+    border-radius:8px;
+    height:50px;
+    width:150px;
+    color:#fff;
+  }
+  #submitBtn:active{
+    transition:300ms ease-in-out;
+    background-color:#121A26;
+  }
 }
 
 //Ipad Pro

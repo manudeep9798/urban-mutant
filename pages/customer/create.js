@@ -134,6 +134,7 @@ const Create = () => {
                             <input type='number' placeholder='Payment Pending [in ₹]'/><br></br>
                         </div>
                     </div>
+                <input id='submitBtn' type='button' value='Submit'/>
                 </form>
                
             </div>
