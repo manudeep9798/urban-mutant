@@ -47,27 +47,27 @@ const NavBar = () => {
              <div className='navIcons'>
              <ul>
              {router.pathname==='/dashboard'?
-             <NavIcons className="navIcon-active" item="RiDashboardFill"/>:
-             <Link href='/dashboard'><a><NavIcons item="RiDashboardFill"/></a></Link>
+            <NavIcons className="navIcon-active" item="RiDashboardFill"/>:
+             <Link href='/dashboard'><a className="navIconLabel"><NavIcons item="RiDashboardFill"/><p>Dashboard</p></a></Link>
              }
              {router.pathname==='/leads'?
              <NavIcons className="navIcon-active" item="IoIosPeople"/>:
-             <Link href='/leads'><a><NavIcons item="IoIosPeople"/></a></Link>
+             <Link href='/leads'><a className="navIconLabel"><NavIcons item="IoIosPeople"/><p>Leads</p></a></Link>
              }
              {router.pathname==='/staff'?
              <NavIcons className="navIcon-active" item="RiFileUserLine"/>:
-             <Link href='/staff'><a><NavIcons item="RiFileUserLine"/></a></Link>
+             <Link href='/staff'><a className="navIconLabel"><NavIcons item="RiFileUserLine"/><p>Staff</p></a></Link>
              }
              {router.pathname==='/customer'?
              <NavIcons  className="navIcon-active" item="FaUserPlus"/>:
-             <Link href='/customer'><a><NavIcons item="FaUserPlus"/></a></Link>
+             <Link href='/customer'><a className="navIconLabel"><NavIcons item="FaUserPlus"/><p>Customer</p></a></Link>
              }
              {router.pathname==='/plans'?
              <NavIcons className="navIcon-active" item="RiCalendarCheckLine"/>
-             :<Link href='/plans'><a><NavIcons item="RiCalendarCheckLine"/></a></Link>
+             :<Link href='/plans'><a className="navIconLabel"><NavIcons item="RiCalendarCheckLine"/><p>Plans</p></a></Link>
              }
              {router.pathname==='/more'?<NavIcons className="navIcon-active" item="FiMoreHorizontal"/>
-             :<Link href='/more'><a><NavIcons item="FiMoreHorizontal"/></a></Link>
+             :<Link href='/more'><a className="navIconLabel"><NavIcons item="FiMoreHorizontal"/><p>More</p></a></Link>
              }
              <Link href='/faq'><a><li id="navBarFaq"><p>FAQ</p></li></a></Link>
              </ul>

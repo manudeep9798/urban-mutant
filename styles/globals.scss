@@ -142,6 +142,29 @@ ul{
      }
    }
   }
+  .navIconLabel{
+    display: flex;
+    max-width: 100px;
+    min-width:100px;
+    text-align:center;
+    p{
+      width: 100px;
+      background-color:#14bb70;
+      padding: 0px 10px;
+      border-radius: 6px;
+      font-size:12px;
+      float: right;
+      margin-left: 20px;
+      margin-top: -7px;
+      opacity: 0;
+    }
+  }
+  .navIconLabel:hover{
+    transition:200ms ease-in-out;
+    p{
+      opacity: 1;
+    }
+  }
   .navIcons::foucs{
     color:green;
   }
