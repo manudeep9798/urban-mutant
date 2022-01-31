@@ -423,6 +423,29 @@ ul{
           width:100%;
         }
       }
+      .twoInput{
+        .eachInput{
+          width:47%;
+          margin-right: 30px;
+        }
+
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
     }
   }
 }

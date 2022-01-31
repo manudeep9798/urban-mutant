@@ -104,6 +104,22 @@ const Create = () => {
                             <input type='text' placeholder='Address'/><br></br>
                         </div>
                     </div>
+
+                    <div className="twoInput">
+                    <div className="eachInput">
+                            <label>PIN Code : </label><br></br>
+                            <input type='text' placeholder='PIN Code'/>
+                        </div>
+                        <div className="eachInput">
+                            <label>Package : </label><br></br>
+                            <select name="rhesus" id="rhesus">
+                                <option value="positive">yearly</option>
+                                <option value="negative">Half Year</option>
+                                <option value="negative">Quarter Year</option>
+                                <option value="negative">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
                     <div className="threeinput">
                         <div className="eachInput">
                             <label>Package Price [in ₹] : </label><br></br>
