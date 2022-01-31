@@ -23,7 +23,6 @@ const Index = () => {
         if(true){
             router.push('/dashboard')
         }
-        
     }
     return (
         <div className="loginPage">

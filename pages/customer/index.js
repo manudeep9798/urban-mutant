@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../src/components/Header/Header'
 import {AiFillFileAdd} from 'react-icons/ai'
-
+import Link from 'next/link'
 const data= [
     {
       "id": 0,
@@ -166,10 +166,10 @@ const index = () => {
                     <input type="checkBox"/>
 
                 </div>
-                <div className="createCustBtn">
+                <Link href='/customer/create'><div className="createCustBtn">
                     <h5>Add New Customer</h5>
                     <span><AiFillFileAdd/></span>
-                    </div>
+                    </div></Link>
                 <div className="customerListing">
                     {
                         data.map(cust=>{
