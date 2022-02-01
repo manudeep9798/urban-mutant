@@ -13,7 +13,8 @@ const data= [
       "dob": "1978",
       "address": "83 Warner Street",
       "city": "Boston",
-      "optedin": true
+      "optedin": true,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -23,7 +24,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": false
     },
     {
       "id": 1,
@@ -33,7 +35,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -43,7 +46,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": false
     },
     {
       "id": 1,
@@ -53,7 +57,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -63,7 +68,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": true
+      "optedin": true,
+      "aboutTOExpire": false
     },
     {
       "id": 1,
@@ -73,7 +79,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": true
+      "optedin": true,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -83,7 +90,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": true
+      "optedin": true,
+      "aboutTOExpire": false
     },,
     {
       "id": 1,
@@ -93,7 +101,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": true
+      "optedin": true,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -103,7 +112,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": false
     },
     {
       "id": 1,
@@ -113,7 +123,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -123,7 +134,9 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": false
+
     },
     {
       "id": 1,
@@ -133,7 +146,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": true
     },
     {
       "id": 1,
@@ -143,7 +157,8 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": false
     },
     {
       "id": 1,
@@ -153,9 +168,17 @@ const data= [
       "dob": "1987",
       "address": "9 Coleman Avenue",
       "city": "Toronto",
-      "optedin": false
+      "optedin": false,
+      "aboutTOExpire": true
     }
   ]
+  const getClassName=(option)=>{
+    if(option){
+      return "customerActiveCondition"
+    }else{
+      return"customerActive"
+    }
+  } 
 const Index = () => {
     return (
         <div>
@@ -166,7 +189,8 @@ const Index = () => {
                     <input type="checkBox"/>
                     <label>In-Active Only</label>
                     <input type="checkBox"/>
-
+                    <label>About To Expire</label>
+                    <input type="checkBox"/>
                 </div>
                 <Link href='/customer/create' passHref><div className="createCustBtn">
                     <h5>Add New Customer</h5>
@@ -177,7 +201,7 @@ const Index = () => {
                         data.map(cust=>{
                             return(
                                 <div key={cust.id} className="customer customerDataCard">
-                                    {cust.optedin?<span className="customerActive"><AiFillCheckCircle/></span>:
+                                    {cust.optedin?<span className={getClassName(cust.aboutTOExpire)}><AiFillCheckCircle/></span>:
                                     <span  className="customerInActive"><AiFillInfoCircle/></span>}
                                     <p><b>Name</b>: {cust.name}</p>
                                     <p><b>DOB</b>: {cust.dob}</p>
