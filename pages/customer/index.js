@@ -156,7 +156,7 @@ const data= [
       "optedin": false
     }
   ]
-const index = () => {
+const Index = () => {
     return (
         <div>
             <Header/>
@@ -193,4 +193,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
