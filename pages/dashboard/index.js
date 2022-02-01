@@ -104,7 +104,7 @@ const Index = () => {
                     }}>Weekly</p>
                       <p>|</p>
                       <p onClick={(e)=>{
-                        setReportRange('monthly')
+                        // setReportRange('monthly')
                         toggleData()
                     }}>Monthly</p>
                       <p>|</p>
