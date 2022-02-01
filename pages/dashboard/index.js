@@ -4,18 +4,14 @@ import PieChart from '../../src/components/PieChart/PieChart'
 import VerticalCards from '../../src/components/VerticalCards/verticalCards';
 import StackedCards from '../../src/components/StackedCards/StackedCards';
 const Index = () => {
-  const [data1,setData1]=useState()
-  const [data2,setData2]=useState()
+  const [data1,setData1]=useState([1,2,3,4,5,6,7,8,9,10,11,12])
+  const [data2,setData2]=useState([12,11,10,9,8,7,6,5,4,3,2,1])
   const [reportRange , setReportRange] =useState('daily');
-  useEffect(() => {
-    console.log(reportRange);
-    setData2([
-      20000, 90000,100000, 40000, 12000, 36000, 60000,20000, 90000,100000, 40000, 12000, 36000, 60000
-    ])
-    setData1([
-      2000, 9000,10000, 4000, 30000, 56000, 60000,2000, 9000,10000, 4000, 30000, 56000, 60000
-    ])
-  }, [reportRange])
+  const toggleData =()=>{
+    const temp =data1;
+    setData1(data2);
+    setData2(temp);
+  }
   const piedata = {
     labels: [
       'Red',
@@ -98,13 +94,25 @@ const Index = () => {
                   <div className=" spaceBetween flex">
                   <h1>Reports</h1>
                   <div className="rangeSelectors flex">
-                      <p onClick={(e)=>setReportRange('daily')}>Daily</p>
+                      <p onClick={(e)=>{
+                        setReportRange('daily')
+                        toggleData()
+                    }}>Daily</p>
                       <p>|</p>
-                      <p onClick={(e)=>setReportRange('weekly')}>Weekly</p>
+                      <p onClick={(e)=>{
+                        setReportRange('weekly')
+                        toggleData()
+                    }}>Weekly</p>
                       <p>|</p>
-                      <p onClick={(e)=>setReportRange('monthly')}>Monthly</p>
+                      <p onClick={(e)=>{
+                        setReportRange('monthly')
+                        toggleData()
+                    }}>Monthly</p>
                       <p>|</p>
-                      <p onClick={(e)=>setReportRange('yearly')}>Yearly</p>
+                      <p onClick={(e)=>{
+                        setReportRange('yearly')
+                        toggleData()
+                    }}>Yearly</p>
                   </div>
                   </div>
                   <div className="divider"></div>
