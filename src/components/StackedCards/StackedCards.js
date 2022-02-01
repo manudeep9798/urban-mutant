@@ -22,11 +22,7 @@ const data = {
     ],
   };
     return (
-        <div className="stackedCards">
-            {/* <h5>{name}</h5> */}
-            <div className="divider"></div>
             <Bar data={data} />
-        </div>
     )
 }
 

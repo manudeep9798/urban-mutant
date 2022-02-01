@@ -84,11 +84,6 @@ const Index = () => {
                     <VerticalCards name="Total Customer" value={126}/>
                     <VerticalCards name="Total Income" value={300000}/>
                 </div>
-                {/* <div className="stackedCardContainer">
-                    <StackedCards name="Monthly Report"/>
-                    <StackedCards name="Weekly Report"/>
-                    <StackedCards name="yearly Report"/>
-                </div> */}
                 <div className="reportContainer">
                   <div className=" spaceBetween flex">
                   <h1>Reports</h1>
