@@ -254,12 +254,10 @@ ul{
     height: 400px;
     padding: 5px 10px;
     .doughnutChart{
+      object-fit: contain;
       canvas{
-        margin-left:25%;
-        margin-top: 10px;
-        height:250px !important;
-        width: 250px !important;
-
+        height:200px;
+        width:200px;
       }
     }
   }
@@ -494,6 +492,23 @@ ul{
     transition:300ms ease-in-out;
     background-color:#121A26;
   }
+  .reportContainer{
+    background-color:white;
+    padding: 5px 10px;
+    margin:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:4px;
+    justify-content: space-between;
+    .rangeSelectors{
+      margin-top:20px;
+      margin-right: 20px;
+      cursor: pointer;
+      width:25%;
+      justify-content: space-between;
+      color:#00AA95;
+      font-weight:800;
+    }
+  }
 }
 
 //Ipad Pro
@@ -501,6 +516,9 @@ ul{
   height:100vh !important;
   background-image:url(../src/assets/images/loginPageBackground.jpeg);
   background-size:cover;
+}
+.spaceBetween{
+  justify-content:space-between;
 }
 @media (min-width:768px) and (max-width:1080px){
   .loginPage .loginPageLeft{

@@ -1,19 +1,25 @@
 import React from 'react'
 import { Chart as ChartJS } from 'chart.js/auto'//not to be deleted
 import { Bar } from 'react-chartjs-2';
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const myData =[
+  20000, 90000,100000, 40000, 12000, 36000, 60000,20000, 90000,100000, 40000, 12000, 36000, 60000
+]
+const myData1 =[
+  2000, 9000,10000, 4000, 30000, 56000, 60000,2000, 9000,10000, 4000, 30000, 56000, 60000
+]
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'];
 const data = {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
-        data:200,
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        label: 'Last Year',
+        data:myData1,
+        backgroundColor: '#86b6a0',
       },
       {
-        label: 'Dataset 2',
-        data:200,
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        label: 'This Year',
+        data:myData,
+        backgroundColor: '#14bb70',
       },
     ],
   };

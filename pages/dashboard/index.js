@@ -1,36 +1,13 @@
-import React from 'react'
+import React, { useState , useEffect}from 'react'
 import Header from '../../src/components/Header/Header'
 import PieChart from '../../src/components/PieChart/PieChart'
 import VerticalCards from '../../src/components/VerticalCards/verticalCards';
 import StackedCards from '../../src/components/StackedCards/StackedCards';
-import {Doughnut} from 'react-chartjs-2'
 const index = () => {
-    
-    const data = {
-        datasets: [{
-          label: 'My First Dataset',
-          data: [65, 59, 80, 81, 56, 55, 40],
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 205, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(201, 203, 207, 0.2)'
-          ],
-          borderColor: [
-            'rgb(255, 99, 132)',
-            'rgb(255, 159, 64)',
-            'rgb(255, 205, 86)',
-            'rgb(75, 192, 192)',
-            'rgb(54, 162, 235)',
-            'rgb(153, 102, 255)',
-            'rgb(201, 203, 207)'
-          ],
-          borderWidth: 1
-        }]
-      };
+  const [reportRange , setReportRange] =useState('daily');
+  useEffect(() => {
+    console.log(reportRange);
+  }, [reportRange])
   const piedata = {
     labels: [
       'Red',
@@ -58,6 +35,10 @@ const index = () => {
         { x: "Leads", y: 300 },
       ];
 
+      const myData1 = [
+        { x: "Income ", y: 900 },
+        { x: "Balance ", y: 400 },
+      ];
       const RecomendedProducts = [{
           name:'Yearly',
           Price: '12000',
@@ -82,14 +63,12 @@ const index = () => {
             <>
             <div className="pageComponent">
                 <div className="flex">
-                    <div className="IncomeChart">
-                    <h1>Income</h1>
-                    <div className="divider"></div>
-                    <div className="doughnutChart">
-                    <Doughnut data={data}
-                    config={config}/>
+                <div className=" mainChart">
+                        <h1>Income</h1>
+                        <div className="divider"></div>
+                        <PieChart data={myData1}/>                    
                     </div>
-                    </div>
+                    
                     <div className=" mainChart">
                         <h1>AIL Ratio</h1>
                         <div className="divider"></div>
@@ -102,10 +81,28 @@ const index = () => {
                     <VerticalCards name="Total Customer" value={126}/>
                     <VerticalCards name="Total Income" value={300000}/>
                 </div>
-                <div className="stackedCardContainer">
+                {/* <div className="stackedCardContainer">
                     <StackedCards name="Monthly Report"/>
                     <StackedCards name="Weekly Report"/>
                     <StackedCards name="yearly Report"/>
+                </div> */}
+                <div className="reportContainer">
+                  <div className=" spaceBetween flex">
+                  <h1>Reports</h1>
+                  <div className="rangeSelectors flex">
+                      <p onClick={(e)=>setReportRange('daily')}>Daily</p>
+                      <p>|</p>
+                      <p onClick={(e)=>setReportRange('weekly')}>Weekly</p>
+                      <p>|</p>
+                      <p onClick={(e)=>setReportRange('monthly')}>Monthly</p>
+                      <p>|</p>
+                      <p onClick={(e)=>setReportRange('yearly')}>Yearly</p>
+                  </div>
+                  </div>
+                  <div className="divider"></div>
+                  <div className="stackedCardContainer">
+                    <StackedCards name="Monthly Report"/>
+                  </div>
                 </div>
             </div>
             </>
