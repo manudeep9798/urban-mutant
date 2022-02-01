@@ -3,7 +3,7 @@ import Header from '../../src/components/Header/Header'
 import PieChart from '../../src/components/PieChart/PieChart'
 import VerticalCards from '../../src/components/VerticalCards/verticalCards';
 import StackedCards from '../../src/components/StackedCards/StackedCards';
-const index = () => {
+const Index = () => {
   const [data1,setData1]=useState()
   const [data2,setData2]=useState()
   const [reportRange , setReportRange] =useState('daily');
@@ -118,4 +118,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
