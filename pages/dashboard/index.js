@@ -6,7 +6,6 @@ import StackedCards from '../../src/components/StackedCards/StackedCards';
 const Index = () => {
   const [data1,setData1]=useState([1,2,3,4,5,6,7,8,9,10,11,12])
   const [data2,setData2]=useState([12,11,10,9,8,7,6,5,4,3,2,1])
-  const [reportRange , setReportRange] =useState('daily');
   const toggleData =()=>{
     const temp =data1;
     setData1(data2);

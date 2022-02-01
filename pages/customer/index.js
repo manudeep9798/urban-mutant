@@ -168,7 +168,7 @@ const Index = () => {
                     <input type="checkBox"/>
 
                 </div>
-                <Link href='/customer/create'><div className="createCustBtn">
+                <Link href='/customer/create' passHref><div className="createCustBtn">
                     <h5>Add New Customer</h5>
                     <span><AiFillFileAdd/></span>
                     </div></Link>
