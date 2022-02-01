@@ -94,12 +94,12 @@ const Index = () => {
                   <h1>Reports</h1>
                   <div className="rangeSelectors flex">
                       <p onClick={(e)=>{
-                        setReportRange('daily')
+                        // setReportRange('daily')
                         toggleData()
                     }}>Daily</p>
                       <p>|</p>
                       <p onClick={(e)=>{
-                        setReportRange('weekly')
+                        // setReportRange('weekly')
                         toggleData()
                     }}>Weekly</p>
                       <p>|</p>
@@ -109,7 +109,7 @@ const Index = () => {
                     }}>Monthly</p>
                       <p>|</p>
                       <p onClick={(e)=>{
-                        setReportRange('yearly')
+                        // setReportRange('yearly')
                         toggleData()
                     }}>Yearly</p>
                   </div>
