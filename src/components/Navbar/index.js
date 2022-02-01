@@ -4,14 +4,11 @@ import {useRouter} from 'next/router';
 import Logo from '../../assets/images/logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import {FiSearch} from 'react-icons/fi'
 import NavBarSp from '../Navbar/NavBarSp'
 
 const NavBar = () => {
     const router = useRouter();
     const size = useWindowSize()
-    const [expandCustNavIcon,setExpandCustNavIcon] =useState(false)
     function useWindowSize() {
         const [windowSize, setWindowSize] = useState({
           width: undefined,

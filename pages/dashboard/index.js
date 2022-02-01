@@ -4,9 +4,17 @@ import PieChart from '../../src/components/PieChart/PieChart'
 import VerticalCards from '../../src/components/VerticalCards/verticalCards';
 import StackedCards from '../../src/components/StackedCards/StackedCards';
 const index = () => {
+  const [data1,setData1]=useState()
+  const [data2,setData2]=useState()
   const [reportRange , setReportRange] =useState('daily');
   useEffect(() => {
     console.log(reportRange);
+    setData2([
+      20000, 90000,100000, 40000, 12000, 36000, 60000,20000, 90000,100000, 40000, 12000, 36000, 60000
+    ])
+    setData1([
+      2000, 9000,10000, 4000, 30000, 56000, 60000,2000, 9000,10000, 4000, 30000, 56000, 60000
+    ])
   }, [reportRange])
   const piedata = {
     labels: [
@@ -101,7 +109,7 @@ const index = () => {
                   </div>
                   <div className="divider"></div>
                   <div className="stackedCardContainer">
-                    <StackedCards name="Monthly Report"/>
+                    <StackedCards data1={data1} data2={data2}name="Monthly Report"/>
                   </div>
                 </div>
             </div>
