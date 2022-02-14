@@ -7,6 +7,7 @@ module.exports ={
         plans: 'Plans',
         more: 'More',
         faq:"FAQ",
-        'customer/create': "Create"
+        'customer/create': "Create",
+        'staff/Create': "Add Staff"
     }
 };

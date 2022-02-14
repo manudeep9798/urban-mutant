@@ -5,23 +5,22 @@ import {FaCartArrowDown} from 'react-icons/fa'
 import {FaHistory} from 'react-icons/fa'
 import {CgProfile} from 'react-icons/cg'
 
-const TopNav = () => {
-    const [showSearchBar,setShowSearchBar] =useState(true)
+const TopNav = ({searchBar}) => {
     const router = useRouter();
     const constants= require('../../constants/global.constants')
     const headingText= router.pathname.substring(1)
+    console.log(searchBar);
     return (
         <div className="TopNav">
             <h2 className="topNavHeadingText">{constants.navBarHeadings[headingText]}</h2>
           
-            <span className="search-bar"><SearchBar/></span>
-
+            {searchBar ===true ? <span className="search-bar"><SearchBar/></span>:null}
 
             <div className="profileCartIconContainer">
-            <span className="cartIconTopNav"><FaCartArrowDown/></span>
-            <span className="historyIconTopNav"><FaHistory/></span>
-            <span className="profileIconTopNav"><CgProfile/></span>
-        </div>
+                <span className="cartIconTopNav"><FaCartArrowDown/></span>
+                <span className="historyIconTopNav"><FaHistory/></span>
+                <span className="profileIconTopNav"><CgProfile/></span>
+            </div>
         </div>
     )
 }

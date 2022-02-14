@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../../src/components/Header/Header'
+
 const Create = () => {
-    return (
-        <div>
-            <Header/>
-            <div className="createCustomerPage">
-                <h1>Add Customer</h1>
+  return (
+    <div>
+        <Header/>
+        <div className='createStaffPage'>
+        <h1>Add Staff</h1>
                 <div className="divider"></div>
                 <form>
                     <div className="threeinput">
@@ -57,8 +58,8 @@ const Create = () => {
                             <input type='date' placeholder='DOB DD-MM-YYY'/>
                         </div>
                         <div className="eachInput">
-                            <label>Occupation : </label><br></br>
-                            <input type='text' placeholder='Occupation'/>
+                            <label>Role : </label><br></br>
+                            <input type='text' placeholder='Role'/>
                         </div>
                         <div className="eachInput">
                             <label>Gender : </label><br></br>
@@ -111,35 +112,16 @@ const Create = () => {
                             <input type='text' placeholder='PIN Code'/>
                         </div>
                         <div className="eachInput">
-                            <label>Package : </label><br></br>
-                            <select name="rhesus" id="rhesus">
-                                <option value="positive">yearly</option>
-                                <option value="negative">Half Year</option>
-                                <option value="negative">Quarter Year</option>
-                                <option value="negative">Monthly</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className="threeinput">
-                        <div className="eachInput">
-                            <label>Package Price [in ₹] : </label><br></br>
-                            <input type='number' placeholder='Package Price [in ₹]'/>
-                        </div>
-                        <div className="eachInput">
-                            <label>Payment Done [in ₹] : </label><br></br>
-                            <input type='number' placeholder='Payment Done [in ₹]'/>
-                        </div>
-                        <div className="eachInput">
-                            <label>Payment Pending [in ₹]  </label><br></br>
-                            <input type='number' placeholder='Payment Pending [in ₹]'/><br></br>
+                            <label>CTC : </label><br></br>
+                            <input type='text' placeholder='CTC'/>
                         </div>
                     </div>
                 <input id='submitBtn' type='button' value='Submit'/>
                 </form>
                
-            </div>
         </div>
-    )
+    </div>
+  )
 }
 
 export default Create

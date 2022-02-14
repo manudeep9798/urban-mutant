@@ -182,7 +182,7 @@ const data= [
 const Index = () => {
     return (
         <div>
-            <Header/>
+            <Header searchBar={true}/>
             <div className="custPage">
                 <div className=" headersec flex">
                     <label>Active Only</label>

@@ -487,6 +487,100 @@ ul{
       }
     }
   }
+  .createStaffPage{
+    text-align: center;
+    color: #00AA95;
+    background-color: white;
+    padding:50px;
+    margin:30px;
+    margin-left: 120px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    form{
+     margin-top:20px;
+      input{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      select{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      label{
+        float:left;
+      }
+      .threeinput{
+        .eachInput{
+          width:30%;
+        }
+        justify-content: space-between;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .oneInput{
+        width:100% !important;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .twoInput{
+        .eachInput{
+          width:47%;
+          margin-right: 30px;
+        }
+
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+    }
+  }
   #submitBtn{
     background-color:#14bb70;
     border-radius:8px;
@@ -515,9 +609,19 @@ ul{
       font-weight:800;
     }
   }
+  .leadsPage{
+    // background-color:white;
+    height:100%;
+    #commingSoonBanner{
+      margin-top:20px;
+      margin-left: 30%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:80vh;
+    }
+  }
 }
 
-//Ipad Pro
 .loginPage{
   height:100vh !important;
   background-image:url(../src/assets/images/loginPageBackground.jpeg);
@@ -526,6 +630,7 @@ ul{
 .spaceBetween{
   justify-content:space-between;
 }
+//Ipad Pro
 @media (min-width:768px) and (max-width:1080px){
   .loginPage .loginPageLeft{
     margin-top: 0px;
@@ -594,7 +699,6 @@ ul{
   .pageComponent{
     margin-left: 84px;
     height:auto;
-    background: #E5E5E5;
     margin-bottom: 150px;
   }
   #navLogo{
@@ -634,6 +738,28 @@ ul{
        padding-left: 50px;
      }
    }
+  }.navIconLabel{
+    display: flex;
+    max-width: 100px;
+    min-width:100px;
+    text-align:center;
+    p{
+      width: 100px;
+      background-color:#14bb70;
+      padding: 0px 10px;
+      border-radius: 6px;
+      font-size:12px;
+      float: right;
+      margin-left: 20px;
+      margin-top: -7px;
+      opacity: 0;
+    }
+  }
+  .navIconLabel:hover{
+    transition:200ms ease-in-out;
+    p{
+      opacity: 1;
+    }
   }
   .navIcons::foucs{
     color:green;
@@ -648,20 +774,19 @@ ul{
     padding-left: 80px;
     padding-top: 10px;
     background-color:#FFFFFF;
+    // height:100%;
     width: 100%;
-    height: 60px !important;
+    height: 70px !important;
     justify-content: space-between;
     .topNavHeadingText{
       padding-left: 30px;
       margin-top: 5px;
-      min-width: 500px;
     }
     .serachBarDropDownSelector{
       padding-top: 5px;
       padding-left: 30px;
       padding-right: 10px;
       margin-top: 5px;
-      margin-left: -180px;
       border: none;
       outline: none;
     }
@@ -671,7 +796,6 @@ ul{
         width: 200px;
         height:40px;
         margin-top: 8px;
-        margin-left: -80px;
         font-family: Roboto;
         border-bottom: 2px solid #C2C2C2;
       }
@@ -690,7 +814,7 @@ ul{
     .profileCartIconContainer{
         display: flex;
         margin-left:80px;
-        position: absolute;
+        margin-top: -5px;
         right: 0px;
         svg{
           color: #6B6B6B;
@@ -701,6 +825,371 @@ ul{
         svg:hover{
           color: #00AA95
         }
+    }
+  }
+  .dashboard{
+    .pageComponent{
+      margin-top:10px;
+      padding: 5px 10px;
+      .bannerCards{
+        padding:5px 20px;
+        display:flex;
+        margin-left: 10px;
+      }
+      .verticalCard{
+        width:100%;
+        border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 5px;
+        padding:0px !important;
+        height:100px !important;
+        margin-top: 20px;;
+        .leftsec{
+          width:10px;
+          background-color:#121A26;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .rightSec{
+          background-color:#FFFFFF;
+          width:100%;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .name{
+          
+          text-align: center;
+          font-size:18px;
+          color:#3E3E3E;
+          font-family: Quattrocento;
+          font-style: normal;
+          font-weight: bold;
+        }
+        .value{
+          margin-top: -25px;
+          color: #14bb70;
+          font-family: Quattrocento;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+        }
+        margin-right: 50px;;
+      }
+      .mainChart{
+        padding: 5px 10px;
+        margin-right: 5px;
+        background-color: white !important;
+      }
+      .reportContainer{
+        background-color:white;
+        padding: 5px 10px;
+        margin:20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius:4px;
+        justify-content: space-between;
+        .rangeSelectors{
+          margin-top:20px;
+          margin-right: 60px;
+          cursor: pointer;
+          width:25%;
+          justify-content: space-between;
+          color:#00AA95;
+          font-weight:800;
+        }
+      }
+    }
+  }
+  .leadsPage{
+    #commingSoonBanner{
+      width:100%;
+      padding:10px 80px;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  }
+  .custPage{
+    margin-left: 84px;
+    .createCustBtn{
+      cursor:grab;
+      margin-top:-75px;
+      margin-right:30px;
+      float: right;
+      h5{
+        font-size:16px;
+        float: right;
+        margin-top:30px;
+      }
+      svg{
+        font-size: 28px;
+        color: grey;
+        margin-top:25px;
+        margin-right: 10px;
+      }
+    }
+    .headersec{
+      background-color:white;
+      min-height: 70px;
+      margin-top:10px;
+      label{
+        margin-top:20px;
+        margin-left: 10px;
+      }
+      input{
+        margin-top:20px;
+        margin-left: 10px;
+        height:20px;
+        width:20px;
+      }
+     
+    }
+    .customerListing{
+      margin-left:20px;
+      display: flex;
+      width: 100%;
+      flex-wrap:wrap;
+    }
+    .customerDataCard{
+      background-color:white;
+      margin: 10px;
+      padding:15px 30px;
+      width: 320px;
+      word-wrap: break-word;
+      border-radius:5px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      .customerActive{
+        float:right;
+        color: #14bb70;
+        font-size:18px;
+      }
+      .customerActiveCondition{
+        float:right;
+        color: #fcba03;
+        font-size:18px;
+      }
+      .customerInActive{
+        float:right;
+        color: #e80000;
+        font-size:18px;
+
+      }
+    }
+    .customerDataCard:hover{
+      transition: 400ms;
+      transform: translateY(-5px);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  .createCustomerPage{
+    #submitBtn{
+      background-color:#14bb70;
+      border-radius:8px;
+      height:50px;
+      width:150px;
+      color:#fff;
+      margin-top: 30px;
+    }
+    #submitBtn:active{
+      transition:300ms ease-in-out;
+      background-color:#121A26;
+    }
+    text-align: center;
+    color: #00AA95;
+    background-color: white;
+    padding:50px;
+    margin:30px;
+    margin-left: 120px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    form{
+     margin-top:20px;
+      input{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      select{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      label{
+        float:left;
+      }
+      .threeinput{
+        .eachInput{
+          width:30%;
+        }
+        justify-content: space-between;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .oneInput{
+        width:100% !important;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .twoInput{
+        .eachInput{
+          width:44%;
+          margin-right: 30px;
+        }
+
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+    }
+  }
+  .createStaffPage{
+    #submitBtn{
+      background-color:#14bb70;
+      border-radius:8px;
+      height:50px;
+      width:150px;
+      color:#fff;
+      margin-top: 30px;
+    }
+    #submitBtn:active{
+      transition:300ms ease-in-out;
+      background-color:#121A26;
+    }
+    text-align: center;
+    color: #00AA95;
+    background-color: white;
+    padding:50px;
+    margin:30px;
+    margin-left: 120px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    form{
+     margin-top:20px;
+      input{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      select{
+        border:none;
+        border-bottom: 1px solid #00AA95;
+        outline: none;
+        margin:10px;
+        padding: 5px 10px;
+        height:30px;
+      }
+      label{
+        float:left;
+      }
+      .threeinput{
+        .eachInput{
+          width:30%;
+        }
+        justify-content: space-between;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .oneInput{
+        width:100% !important;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:100%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
+      .twoInput{
+        .eachInput{
+          width:44%;
+          margin-right: 30px;
+        }
+
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        label{
+          font-weight: bold;
+          text-align: left;
+          margin-top:15px;
+          margin-left:10px;
+        }
+        input{
+          width:80%;
+          margin-right: 50px;;
+        }
+        select{
+          width:100%;
+        }
+      }
     }
   }
 }

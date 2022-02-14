@@ -1,11 +1,11 @@
 import React from 'react'
 import TopNav from '../TopNav/TopNav'
 import NavBar from '../Navbar/index'
-const Header = () => {
+const Header = ({searchBar}) => {
     return (
         <div>
             <NavBar/>
-            <TopNav/>
+            <TopNav searchBar={searchBar}/>
         </div>
     )
 }
