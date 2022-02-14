@@ -73,7 +73,7 @@ const Create = () => {
                     </div>
                     <div className="threeinput"> 
                     <div className="eachInput">
-                    <label>Batch : </label>
+                    <label>Batch : </label><br></br>
                     <select name="batch" id="batch">
                         <option value="notSelected">Batch</option>
                         <option value="Morning">Morning</option>
@@ -82,7 +82,7 @@ const Create = () => {
                     </select>  
                     </div>
                     <div className="eachInput">
-                    <label>Blood Group : </label>
+                    <label>Blood Group : </label><br></br>
                     <select name="bloodGroup" id="bloodGroup">
                         <option value="notSelected">Blood Group</option>
                         <option value="positive">A</option>
@@ -92,7 +92,7 @@ const Create = () => {
                     </select>
                     </div>
                     <div className="eachInput">
-                    <label>+/- : </label>
+                    <label>+/- : </label><br></br>
                     <select name="rhesus" id="rhesus">
                         <option value="positive">Positive [+]</option>
                         <option value="negative">Negative [-]</option>
