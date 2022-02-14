@@ -1288,4 +1288,86 @@ ul{
     }
     
   }
+  .TopNav{
+    display: none;
+  }
+  .dashboard{
+    .pageComponent{
+      .flex{
+        display: block;
+      }
+      .mainChart{
+        background-color: white;
+        padding: 5px 10px; 
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .bannerCards{
+        padding:5px 20px;
+        margin-left: 10px;
+      }
+      .verticalCard{
+        width:100%;
+        border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 5px;
+        padding:0px !important;
+        height:100px !important;
+        margin-top: 20px;
+        display:flex;
+        .leftsec{
+          width:10px;
+          background-color:#121A26;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .rightSec{
+          background-color:#FFFFFF;
+          width:100%;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .name{
+          
+          text-align: center;
+          font-size:18px;
+          color:#3E3E3E;
+          font-family: Quattrocento;
+          font-style: normal;
+          font-weight: bold;
+        }
+        .value{
+          margin-top: -25px;
+          color: #14bb70;
+          font-family: Quattrocento;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+        }
+        margin-right: 50px;
+      }
+      .reportContainer{
+        background-color:white;
+        padding: 5px 10px;
+        margin:20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius:4px;
+        justify-content: space-between;
+        .rangeSelectors{
+          display:flex;
+          margin-top:20px;
+          margin-right: 20px;
+          cursor: pointer;
+          width:25%;
+          justify-content: space-between;
+          color:#00AA95;
+          font-weight:800;
+          p{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }

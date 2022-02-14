@@ -45,7 +45,7 @@ const NavBarSp = () => {
                     <h3>{searchExpanded===false?constants.navBarHeadings[headingText]:null}</h3>
                     {searchExpanded===true?<><input type="text" name="search" placeholder={`Search`} className="searchInputExpanded"/></>:
                     null}
-                    <span onClick={(e)=>handelSeacrhExpansionSPview(e)} id="searchBarIconSPView"><FiSearch/></span>
+                    {/* <span onClick={(e)=>handelSeacrhExpansionSPview(e)} id="searchBarIconSPView"><FiSearch/></span> */}
                 </div>
            </div>
            <div className={menuExpanded}>
@@ -56,6 +56,9 @@ const NavBarSp = () => {
                    <Link href='/customer'><a><div className="menuLinksSpview"><li>Customers</li></div></a></Link>
                   <Link href='/plans'><a><div className="menuLinksSpview"><li>Plans</li></div></a></Link>
                    <Link href='/more'><a><div className="menuLinksSpview"><li>More...</li></div></a></Link>
+                   <Link href='/more'><a><div className="menuLinksSpview"><li>Cart</li></div></a></Link>
+                   <Link href='/more'><a><div className="menuLinksSpview"><li>Order History</li></div></a></Link>
+                   <Link href='/more'><a><div className="menuLinksSpview"><li>Profile</li></div></a></Link>
                    <Link href='/faq'><a><div id="faqLinkSpView" className="menuLinksSpview"><li>FAQ</li></div></a></Link>
                </ul>
             </div>
